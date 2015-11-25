@@ -1,0 +1,10 @@
+﻿<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span ng-hide="selectedItem.DisplayName">{{displayTitle}}</span>{{selectedItem.DisplayName}}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+        <li><a ng-click="onItemSelected()" href="">--</a></li>
+        <li ng-repeat="item in dataItems"><a ng-click="onItemSelected(item)" href="">{{item.DisplayName}}</a></li>
+    </ul>
+</div>

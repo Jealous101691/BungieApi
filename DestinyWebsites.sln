@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{78FB1E72-77CD-490B-ABAE-4D0BC3DE7AE3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BungieApi", "BungieApi\BungieApi.csproj", "{8558FD25-011E-4E54-931D-0597A611C64E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{32E59F43-B09F-4C45-8BAB-B163FFCCF873}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{08E484B0-0FE1-4ACC-BC8F-AD31B4DD62A3}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\BungieApi-WAWS-dev.json = PublishScripts\Configurations\BungieApi-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8558FD25-011E-4E54-931D-0597A611C64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8558FD25-011E-4E54-931D-0597A611C64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8558FD25-011E-4E54-931D-0597A611C64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8558FD25-011E-4E54-931D-0597A611C64E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08E484B0-0FE1-4ACC-BC8F-AD31B4DD62A3} = {32E59F43-B09F-4C45-8BAB-B163FFCCF873}
+	EndGlobalSection
+EndGlobal

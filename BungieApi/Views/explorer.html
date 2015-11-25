@@ -1,0 +1,61 @@
+﻿<div>
+    <form>
+        <div class="panel panel-default">
+            <div class="panel-heading" data-toggle="collapse" data-target="#collapseParameters" aria-expanded="false" aria-controls="collapseExample" ng-click="parametersToggle()">
+                    API Parameters <span id="parametersIcon" class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+            <div class="panel-body collapse" id="collapseParameters">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonMembershipId">MembershipId</span>
+                        <input type="text" class="form-control" placeholder="MembershipId" ng-model="parameter.MembershipId" aria-describedby="addonMembershipId">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonMembershipType">MembershipType</span>
+                        <input type="text" class="form-control" placeholder="MembershipType" ng-model="parameter.MembershipType" aria-describedby="addonMembershipType">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonBungieId">BungieId</span>
+                        <input type="text" class="form-control" placeholder="BungieId" ng-model="parameter.BungieId" aria-describedby="addonBungieId">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonSearch">Search</span>
+                        <input type="text" class="form-control" placeholder="Search" ng-model="parameter.Search" aria-describedby="addonSearch">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonSearchPage">SearchPage</span>
+                        <input type="text" class="form-control" placeholder="SearchPage" ng-model="parameter.SearchPage" aria-describedby="addonSearchPage">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonCharacterId">CharacterId</span>
+                        <input type="text" class="form-control" placeholder="CharacterId" ng-model="parameter.CharacterId" aria-describedby="addonCharacterId">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonManifestType">ManifestType</span>
+                        <input type="text" class="form-control" placeholder="ManifestType" ng-model="parameter.ManifestType" aria-describedby="addonManifestType">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonManifestId">ManifestId</span>
+                        <input type="text" class="form-control" placeholder="ManifestId" ng-model="parameter.ManifestId" aria-describedby="addonManifestId">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonItemId">ItemId</span>
+                        <input type="text" class="form-control" placeholder="ItemId" ng-model="parameter.ItemId" aria-describedby="addonItemId">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addonIActivityId">ActivityId</span>
+                        <input type="text" class="form-control" placeholder="ActivityId" ng-model="parameter.ActivityId" aria-describedby="addonActivityId">
+                    </div>
+                </div>
+        </div>
+    </form>
+    <div my-dropdown data="BungieApiCalls" title="'Select an API'" on-select-item="apiCallSelected"></div>
+
+    <div class="panel panel-default" style="margin-top: 20px;">
+        <div class="panel-heading">
+            <span style="word-wrap: break-word;"><strong>Results</strong> {{FormattedUrl.Url}}</span>
+        </div>
+        <div class="panel-body">
+            <span style="word-wrap: break-word;" id="elem"></span>
+        </div>
+    </div>
+</div>
