@@ -279,3 +279,15 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+bootstrap*
+angular*
+jasmine*
+glyphicons*
+jquery*
+*.ps1
+*.psm1
+*.json
+*.exe
+*.Config
+*.targets
