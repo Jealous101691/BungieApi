@@ -1,6 +1,6 @@
-﻿using System.Security.Policy;
-using System.Web.Http;
+﻿using System.Web.Http;
 using BungieApi.Bungie;
+using BungieApi.Models;
 using Newtonsoft.Json.Linq;
 
 namespace BungieApi.Controllers
@@ -24,13 +24,8 @@ namespace BungieApi.Controllers
                 return BadRequest("input was null.");
             }
             var data = _client.Client.GetAsync( request.Url ).Result.Content.ReadAsStringAsync( ).Result;
-            JObject json = JObject.Parse( data );
+            var json = JObject.Parse( data );
             return Ok( json );
         }
-    }
-
-    public class DestinyRequest
-    {
-        public string Url { get; set; }
     }
 }
